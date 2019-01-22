@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>BMO Arcade</title>
+    <link rel="stylesheet" href="css/juego.css">
+</head>
+
+<body>
+    <div id="ganaste">
+        <input id="volver-a-Jugar" class="button" type="button" value="volver-a-Jugar" onclick="volverAJugar()">
+        <h2 id="cartelGanador"> </h2>
+    </div>
+    <div id="nav">
+        <nav>
+            <input id="button" class="button" type="button" value="Jugar" onclick="mostrarJuego()">
+            <input id="button2" class="button" type="button" value="Mezclar-piezas" onclick="reset()">
+        </nav>
+        <header class="contenedor">
+            <h1 class="Rompecabezas">
+                ROMPECABEZAS
+            </h1>
+        </header>
+    </div>
+    <div id="rompecabezaHtml" style='display:none;'>
+        <div class="col-40">
+            <div id="titulo">
+                <h1>A Jugar</h1>
+            </div>
+            <div id="instrucciones">
+                <h1>Instrucciones</h1>
+                <ul id="lista-instrucciones">
+                </ul>
+            </div>
+            <div id="objetivo">
+                <div class="texto-centrado">
+                    <img src="./images/final.png" alt="pieza8" title="pieza8" class="piezamuestra">
+                </div>
+            </div>
+            <div id="ultimo-mov">
+                <h1>Ùltimo movimiento</h1>
+                <div id="flecha" class="texto-centrado">
+                </div>
+            </div>
+        </div>
+        <div class="col-60">
+            <div id="juego">
+                <div id="pieza1"> <img src="./images/10.jpg" alt="pieza1" title="pieza1" class="piezas">
+                </div>
+                <div id="pieza2"><img src="./images/20.jpg" alt="pieza2" title="pieza2" class="piezas">
+                </div>
+                <div id="pieza3"><img src="./images/30.jpg" alt="pieza3" title="pieza3" class="piezas">
+                </div>
+                <div id="pieza4"><img src="./images/40.jpg" alt="pieza4" title="pieza4" class="piezas">
+                </div>
+                <div id="pieza5"><img src="./images/50.jpg" alt="pieza5" title="pieza5" class="piezas">
+                </div>
+                <div id="pieza6"><img src="./images/60.jpg" alt="pieza6" title="pieza6" class="piezas">
+                </div>
+                <div id="pieza7"><img src="./images/70.jpg" alt="pieza7" title="pieza7" class="piezas">
+                </div>
+                <div id="pieza8"><img src="./images/80.jpg" alt="pieza8" title="pieza8" class="piezas">
+                </div>
+                <div id="pieza9" class="piezas">
+                </div>
+            </div>
+            <script src="js/juego.js"></script>
+
+        </div>
+    </div>
+    <div id="footer">
+        <footer>
+            <h1><strong>Atala Desing_©Copyright</strong></h1>
+        </footer>
+</body>
+
+</html>
